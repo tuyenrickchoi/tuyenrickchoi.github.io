@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css" />
+
+    <style>
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        /* LIST */
+        .list {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 0;
+            padding: 15px;
+        }
+
+        .list li {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-bottom: solid 1px #cfcbcb;
+        }
+
+        .list li:hover {
+            background-color: #f1f1f1;
+        }
+
+        .list li img {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .list li .body {
+            margin-left: 20px;
+            flex-grow: 1;
+        }
+
+        .list li .action {
+            width: 50px;
+            margin-left: 10px;
+        }
+
+        /* ALERT */
+        .alert {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            position: relative;
+        }
+
+        .alert--danger {
+            background-color: red;
+            color: white;
+        }
+
+        .alert--success {
+            background-color: greenyellow;
+        }
+
+        .alert__body {
+            margin-top: 15px;
+        }
+
+        .alert__action {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <ul class="list">
+            <li>
+                <img src="https://www.w3schools.com/w3css/img_avatar2.png" alt="Mike avatar" />
+                <div class="body">
+                    <h3>Mike</h3>
+                    <p>Web Designer</p>
+                </div>
+                <span class="action">X</span>
+            </li>
+            <li>
+                <img src="https://www.w3schools.com/w3css/img_avatar5.png" alt="Jill avatar" />
+                <div class="body">
+                    <h3>Jill</h3>
+                    <p>Support</p>
+                </div>
+                <span class="action">X</span>
+            </li>
+            <li>
+                <img src="https://www.w3schools.com/w3css/img_avatar6.png" alt="Jane avatar" />
+                <div class="body">
+                    <h3>Jane</h3>
+                    <p>Accountant</p>
+                </div>
+                <span class="action">X</span>
+            </li>
+        </ul>
+
+        <br />
+        <br />
+
+        <div class="alert alert--danger">
+            <h3 class="alert__heading">
+                Danger!
+            </h3>
+            <p class="alert__body">
+                Red often indicates a dangerous or negative situation.
+            </p>
+            <span class="alert__action">X</span>
+        </div>
+
+        <div class="alert alert--success">
+            <h3 class="alert__heading">
+                Successfully!
+            </h3>
+            <p class="alert__body">
+                Red often indicates a dangerous or negative situation.
+            </p>
+            <span class="alert__action">X</span>
+        </div>
+    </main>
+</body>
+
+</html>

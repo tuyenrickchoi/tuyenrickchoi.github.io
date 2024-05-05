@@ -1,0 +1,10 @@
+background: url(https://blendr.network/img/hero.png) no-repeat 50% 50%;
+    background-image: url(https://blendr.network/img/hero.png);
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: initial;   
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;

@@ -1,42 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="sr"><head>
+  <meta name="title" content="TUYEN's Site">
+  <meta name="description" content="Hi, my name is TUYEN. I'm the Web Developer.">
+  <meta name="keywords" content="web, fullstack developer">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="Nguyen THe TUyen">
+  <meta property="og:title" content="Quyen's Site" />
+  <meta property="og:url" content="/" />
+  <meta property="og:image" content="/banner.avif" />
+
+  <meta name="twitter:title" content="TUYEN's Site">
+  <meta name="twitter:description" content="Hi, my name is Tuyen. I'm the Superman.">
+  <meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <meta name="twitter:card" content="TUYEN's Site">
+
+  
+</head>
+</body></html>
 
 <head>
-  <title>My Site</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
-
-    body,
-    html {
-      height: 100%
-    }
-
-    .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1710796987486-0e0fa9ef9265?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    /* Additional CSS styles for the video */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
       min-height: 100%;
-      background-position: center;
-      background-size: cover;
+      z-index: -1;
+    }
+    .banner-cta:hover .text-xl {
+      transform: translateY(-5px); 
+    
     }
   </style>
 </head>
-
-<body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Logo
-    </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center">10 days left</p>
-    </div>
-  </div>
+<body style="height: 100%;">
+  <main>
+    <!-- banner -->
+    <video autoplay loop muted playsinline id="bg-video">
+      <source src="https://blendr.network/video/CPU.mp4" type="video/mp4">
+    
+    </video>
+    <section class="min-h-screen w-full flex flex-col justify-center items-center relative">
+      <div class="relative z-10">
+        <div class="w-full lg:w-[80%] p-12 text-white">
+          <h1 class="text-6xl font-bold mb-10 grid grid-col-1 lg:gap-5">
+            <span class="banner-text" data-sr-id="0" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.7s;">Hi, my name is <span class="text-green-300">Nguyen The Tuyen</span></span>
+            <span class="text-slate-300 banner-text" data-sr-id="2" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.7s;">I'm the Superman.</span>
+          </h1>
+          <a href="#about-me" class="banner-cta uppercase border-2 border-teal-400 p-3 hover:bg-teal-400 hover:text-white transition-colors cursor-pointer" data-sr-id="3" style="visibility: visible; opacity: 1; transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, fill 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 1s;">
+ 
+            <span class="text-xl pl-8 pr-8 pt-3 pb-3 font-light focus:outline-none focus:ring focus:ring-teal-300 inline-block">Know more</span>
+            
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- banner ./ -->
+  </main>
 </body>
 </html>
+
+    <!-- about me -->
+    <section id="about-me" class="bg-teal-400 min-h-screen w-full flex flex-col justify-center items-center p-4 lg:p-12 text-white">
+      <div class="w-full lg:w-[60%] mb-5">
+        <h2 class="uppercase text-2xl lg:text-5xl text-center font-bold text-white mb-12 section-title" data-sr-id="4" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.3s;">"About Me"</h2>
+        <div class="grid grid-cols-1 gap-2 lg:grid-cols-3 lg:gap-3 section-content" data-sr-id="6" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.5s;">
+          <div class="flex justify-center items-center text-center col-span-1">
+            <img class="object-cover max-w-xs lg:w-auto" src="https://th.bing.com/th/id/R.dd14bce46c8665be3a36b40713002af7?rik=SHcibPk8Rn51FQ&pid=ImgRaw&r=0" title="My avatar" alt="My avatar">
+          </div>
+          <div class="col-span-1 lg:col-span-2 flex justify-center items-center">
+            <div class="p-0 text-center lg:p-8 lg:text-start">
+              <p class="pb-3 text-lg font-light mb-5">
+               " With today's modern and developing life,
+                 international integration is extremely important, 
+                 it is the language used by many countries.
+                  Therefore, English will help us have a lot of knowledge and a better job in the future, not only that, I will be able to exchange with international friends. . My English background is really bad so learning is difficult for me. "
+              </p>
+              <a href="https://docs.google.com/document/d/1I7tq2oT0xxYy6DqFcuApwyFsCoXwKU5H/edit" target="_blank" class="uppercase border-2 border-white p-3 text-white hover:bg-white hover:text-teal-400 transition-colors cursor-pointer">
+                <span class="text-xl pl-8 pr-8 pt-3 pb-3 font-normal focus:outline-none focus:ring focus:ring-teal-300">View My CV</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about me ./ -->  
+
+    <!-- contact -->
+    <section id="contact" class="bg-black min-h-[500px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-white">
+      <div class="w-full lg:w-[60%] mb-5">
+        <h2 class="uppercase text-2xl lg:text-5xl text-center font-bold mb-6 section-title" data-sr-id="5" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.3s;">Contact</h2>
+        <p class="flex flex-col justify-center items-center pt-5 pb-5 text-center section-content" data-sr-id="7" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.5s;">
+          <span class="text-2xl text-green-200 mb-3">I LOOK FORWARD TO WORKING WITH YOU</span>
+          <span>I'm so happy that my skills might bring values to you. Let's connect for work</span>
+        </p>
+      </div>
+      <a href="mailto: nghuuquyen@gmail.com?subject=Hi, Quyen I want to connect with you for work !!!&amp;body=Please describe your work or projects requirements" class="section-content border-2 border-teal-400 pl-8 pr-8 pt-3 pb-3 bg-teal-400 text-white hover:bg-white hover:text-teal-400 transition-colors cursor-pointer" data-sr-id="8" style="visibility: visible; opacity: 1; transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, fill 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.5s;">
+        <span class="text-xl uppercase font-light focus:outline-none focus:ring focus:ring-blue-400">Send An Email Now</span>
+      </a>
+    </section>
+    <!-- contact ./ -->
+  </main>
+
+  <!-- footer -->
+  <footer class="bg-green-300 min-h-[300px] pt-12 pb-12 flex flex-row justify-center items-center">
+    <div class="w-[60%] flex flex-col justify-center items-center section-content" data-sr-id="9" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.5s;">
+      <ul class="flex flex-row">
+        <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2">
+          <a href="https://twitter.com/nghuuquyen" target="_blank">
+            <img class="w-10 grayscale hover:grayscale-0 transition-transform rotate-45 transform hover:scale-50" src="https://nghuuquyen.github.io/imgs/twitter.svg" style="filter: grayscale(100%);">
+          </a>
+        </li>
+        <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2">
+          <a href="https://www.linkedin.com/in/nghuuquyen" target="_blank">
+            <img class="w-10  hover:grayscale-0 transition-transform rotate-45 transform hover:scale-50" src="https://nghuuquyen.github.io/imgs/linkedin.svg" style="filter: grayscale(100%);">
+          </a>
+        </li>
+        <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2">
+          <a href="https://github.com/tuyenrickchoi" target="_blank">
+            <img class="w-10 grayscale hover:grayscale-0 transition-transform duration-300   transform hover:scale-50" src="https://nghuuquyen.github.io/imgs/github.svg">
+          </a>
+        </li>
+      </ul>
+
+      <hr class="w-1/2 border-gray-500 mt-10">
+      <p class="text-lg text-gray-500 mt-5">©2024 - Tuyen Tien Ti</p>
+    </div>
+  </footer>
+  <!-- footer ./ -->
+  
+
+
+
